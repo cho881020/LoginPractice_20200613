@@ -2,6 +2,7 @@ package kr.co.namu.loginpractice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,8 +19,14 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this, "로그인 버튼이 눌림", Toast.LENGTH_SHORT).show()
 
+            Log.d("메인화면", "로그인 버튼 눌림")
 
         }
+
+        signUpBtn.setOnClickListener {
+            Toast.makeText(this, "회원가입 눌림", Toast.LENGTH_SHORT).show()
+        }
+
 
     }
 }
